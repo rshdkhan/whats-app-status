@@ -22,10 +22,10 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KR6-b3-4G2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-q3-cyp">
-                                <rect key="frame" x="20" y="20" width="335" height="607"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-q3-cyp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JQd-ar-dzU">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b6K-Er-ShL">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -39,10 +39,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.54117647059999996" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bkU-q3-cyp" firstAttribute="top" secondItem="KR6-b3-4G2" secondAttribute="top" constant="20" id="HdC-cD-zja"/>
-                            <constraint firstAttribute="trailing" secondItem="bkU-q3-cyp" secondAttribute="trailing" constant="20" id="bas-M8-jzF"/>
-                            <constraint firstItem="bkU-q3-cyp" firstAttribute="leading" secondItem="KR6-b3-4G2" secondAttribute="leading" constant="20" id="nZy-FH-O3J"/>
-                            <constraint firstAttribute="bottom" secondItem="bkU-q3-cyp" secondAttribute="bottom" constant="20" id="qKC-GL-Zsy"/>
+                            <constraint firstItem="bkU-q3-cyp" firstAttribute="top" secondItem="KR6-b3-4G2" secondAttribute="top" id="HdC-cD-zja"/>
+                            <constraint firstAttribute="trailing" secondItem="bkU-q3-cyp" secondAttribute="trailing" id="bas-M8-jzF"/>
+                            <constraint firstItem="bkU-q3-cyp" firstAttribute="leading" secondItem="KR6-b3-4G2" secondAttribute="leading" id="nZy-FH-O3J"/>
+                            <constraint firstAttribute="bottom" secondItem="bkU-q3-cyp" secondAttribute="bottom" id="qKC-GL-Zsy"/>
                         </constraints>
                     </view>
                 </subviews>

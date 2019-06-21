@@ -13,26 +13,38 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InnerCollectionViewCell" customModule="status" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBj-fz-qrP">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inner cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJD-SW-UGm">
-                                <rect key="frame" x="-10" y="15" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYE-jy-b4S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOk-qx-AtT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DOk-qx-AtT" secondAttribute="bottom" id="05F-CA-68p"/>
+                                    <constraint firstAttribute="trailing" secondItem="DOk-qx-AtT" secondAttribute="trailing" id="KZR-br-xNd"/>
+                                    <constraint firstItem="DOk-qx-AtT" firstAttribute="width" secondItem="YYE-jy-b4S" secondAttribute="width" id="YTe-a2-i2K"/>
+                                    <constraint firstItem="DOk-qx-AtT" firstAttribute="height" secondItem="YYE-jy-b4S" secondAttribute="height" id="aSd-gt-cBd"/>
+                                    <constraint firstItem="DOk-qx-AtT" firstAttribute="top" secondItem="YYE-jy-b4S" secondAttribute="top" id="kQO-YU-Ut3"/>
+                                    <constraint firstItem="DOk-qx-AtT" firstAttribute="leading" secondItem="YYE-jy-b4S" secondAttribute="leading" id="pUd-fm-czA"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.89411764709999997" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aJD-SW-UGm" firstAttribute="centerX" secondItem="qBj-fz-qrP" secondAttribute="centerX" id="PnT-YR-AFe"/>
-                            <constraint firstItem="aJD-SW-UGm" firstAttribute="centerY" secondItem="qBj-fz-qrP" secondAttribute="centerY" id="vAj-CA-wwA"/>
+                            <constraint firstAttribute="bottom" secondItem="YYE-jy-b4S" secondAttribute="bottom" id="DSn-j3-Tfd"/>
+                            <constraint firstItem="YYE-jy-b4S" firstAttribute="leading" secondItem="qBj-fz-qrP" secondAttribute="leading" id="H2e-gr-rUG"/>
+                            <constraint firstAttribute="trailing" secondItem="YYE-jy-b4S" secondAttribute="trailing" id="V4k-68-RYk"/>
+                            <constraint firstItem="YYE-jy-b4S" firstAttribute="top" secondItem="qBj-fz-qrP" secondAttribute="top" id="hLk-tX-y5K"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -44,6 +56,10 @@
                 <constraint firstAttribute="bottom" secondItem="qBj-fz-qrP" secondAttribute="bottom" id="btJ-I9-WPj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgStory" destination="DOk-qx-AtT" id="7ND-tN-Hye"/>
+                <outlet property="scrollView" destination="YYE-jy-b4S" id="nCJ-ZR-QNn"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

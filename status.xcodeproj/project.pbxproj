@@ -21,6 +21,8 @@
 		458524DA22BD3F3100AB98AE /* OuterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458524D822BD3F3100AB98AE /* OuterCollectionViewCell.xib */; };
 		458524DD22BD441600AB98AE /* InnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458524DB22BD441600AB98AE /* InnerCollectionViewCell.swift */; };
 		458524DE22BD441600AB98AE /* InnerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458524DC22BD441600AB98AE /* InnerCollectionViewCell.xib */; };
+		458524E022BD684200AB98AE /* StoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458524DF22BD684200AB98AE /* StoryHandler.swift */; };
+		458524E222BD69F000AB98AE /* StoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458524E122BD69F000AB98AE /* StoryBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		458524D822BD3F3100AB98AE /* OuterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OuterCollectionViewCell.xib; sourceTree = "<group>"; };
 		458524DB22BD441600AB98AE /* InnerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerCollectionViewCell.swift; sourceTree = "<group>"; };
 		458524DC22BD441600AB98AE /* InnerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InnerCollectionViewCell.xib; sourceTree = "<group>"; };
+		458524DF22BD684200AB98AE /* StoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryHandler.swift; sourceTree = "<group>"; };
+		458524E122BD69F000AB98AE /* StoryBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			children = (
 				458524D322BD2F9800AB98AE /* Story */,
 				455E9C6F22BC1A0D00DAB164 /* Listing */,
+				458524E122BD69F000AB98AE /* StoryBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				455E9C7522BC1C0B00DAB164 /* User.swift */,
+				458524DF22BD684200AB98AE /* StoryHandler.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +233,8 @@
 				458524DD22BD441600AB98AE /* InnerCollectionViewCell.swift in Sources */,
 				455E9C5E22BC194D00DAB164 /* ListViewController.swift in Sources */,
 				455E9C7922BC1DB700DAB164 /* DataSource.swift in Sources */,
+				458524E022BD684200AB98AE /* StoryHandler.swift in Sources */,
+				458524E222BD69F000AB98AE /* StoryBar.swift in Sources */,
 				458524D922BD3F3100AB98AE /* OuterCollectionViewCell.swift in Sources */,
 				455E9C5C22BC194D00DAB164 /* AppDelegate.swift in Sources */,
 			);
