@@ -19,6 +19,8 @@
 		458524D522BD2FBC00AB98AE /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458524D422BD2FBC00AB98AE /* StoryViewController.swift */; };
 		458524D922BD3F3100AB98AE /* OuterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458524D722BD3F3100AB98AE /* OuterCollectionViewCell.swift */; };
 		458524DA22BD3F3100AB98AE /* OuterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458524D822BD3F3100AB98AE /* OuterCollectionViewCell.xib */; };
+		458524DD22BD441600AB98AE /* InnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458524DB22BD441600AB98AE /* InnerCollectionViewCell.swift */; };
+		458524DE22BD441600AB98AE /* InnerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458524DC22BD441600AB98AE /* InnerCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		458524D422BD2FBC00AB98AE /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		458524D722BD3F3100AB98AE /* OuterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterCollectionViewCell.swift; sourceTree = "<group>"; };
 		458524D822BD3F3100AB98AE /* OuterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OuterCollectionViewCell.xib; sourceTree = "<group>"; };
+		458524DB22BD441600AB98AE /* InnerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerCollectionViewCell.swift; sourceTree = "<group>"; };
+		458524DC22BD441600AB98AE /* InnerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InnerCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			children = (
 				458524D722BD3F3100AB98AE /* OuterCollectionViewCell.swift */,
 				458524D822BD3F3100AB98AE /* OuterCollectionViewCell.xib */,
+				458524DB22BD441600AB98AE /* InnerCollectionViewCell.swift */,
+				458524DC22BD441600AB98AE /* InnerCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				455E9C6622BC195A00DAB164 /* LaunchScreen.storyboard in Resources */,
+				458524DE22BD441600AB98AE /* InnerCollectionViewCell.xib in Resources */,
 				455E9C6322BC195A00DAB164 /* Assets.xcassets in Resources */,
 				458524DA22BD3F3100AB98AE /* OuterCollectionViewCell.xib in Resources */,
 				455E9C7422BC1A7400DAB164 /* ListingTableViewCell.xib in Resources */,
@@ -217,6 +224,7 @@
 				458524D522BD2FBC00AB98AE /* StoryViewController.swift in Sources */,
 				455E9C7622BC1C0B00DAB164 /* User.swift in Sources */,
 				455E9C7322BC1A7400DAB164 /* ListingTableViewCell.swift in Sources */,
+				458524DD22BD441600AB98AE /* InnerCollectionViewCell.swift in Sources */,
 				455E9C5E22BC194D00DAB164 /* ListViewController.swift in Sources */,
 				455E9C7922BC1DB700DAB164 /* DataSource.swift in Sources */,
 				458524D922BD3F3100AB98AE /* OuterCollectionViewCell.swift in Sources */,

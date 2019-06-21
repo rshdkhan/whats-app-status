@@ -12,13 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mTableView: UITableView!
     let imgCollection = [
-        [UIImage(named:"pexels-photo-4525"),
-         UIImage(named:"pexels-photo-302053"), UIImage(named:"pexels-photo-415326"),
-         UIImage(named:"pexels-photo-452558")],
-        [UIImage(named:"pexels-photo-4525"),UIImage(named:"pexels-photo-452558")],
-        [UIImage(named:"pexels-photo-4525"),UIImage(named:"pexels-photo-302053"), UIImage(named:"pexels-photo-452558")],
-        [UIImage(named:"pexels-photo-4525")],
-        [UIImage(named:"pexels-photo-4525"), UIImage(named:"pexels-photo-452558"), UIImage(named:"pexels-photo-302053"), UIImage(named:"pexels-photo-415326")]] as! [[UIImage]]
+        [UIImage(named:"profile1"), UIImage(named:"profile3")],
+        [UIImage(named:"profile4"), UIImage(named:"profile2")]
+    ]
     
     
     var users = [User]()
@@ -55,7 +51,7 @@ class ViewController: UIViewController {
         if segue.identifier == "showStory" {
             if let indexPath = mTableView.indexPathForSelectedRow {
                 let storyVC = segue.destination as! StoryViewController
-                storyVC.imageCollection = imgCollection
+                storyVC.imageCollection = imgCollection as! [[UIImage]]
                 storyVC.rowIndex = indexPath.row
                 mTableView.deselectRow(at: indexPath, animated: false)
             }
