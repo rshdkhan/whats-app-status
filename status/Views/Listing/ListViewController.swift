@@ -11,10 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mTableView: UITableView!
-    let imgCollection = [
-        [UIImage(named:"profile1"), UIImage(named:"profile3")],
-        [UIImage(named:"profile4"), UIImage(named:"profile2")]
-    ]
+    var imgCollection = [[UIImage]]()
     
     
     var users = [User]()
@@ -34,8 +31,8 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        let dataSource = DataSource()
-        dataSource.getUsers { (users) in
+        let store = Store()
+        store.getUsers { (users) in
             guard let users = users else {
                 print("users array is empty ...")
                 return
@@ -45,13 +42,22 @@ class ViewController: UIViewController {
             self.mTableView.reloadData()
             print(users)
         }
+        
+        store.getImageCollection { (imageCollection) in
+            guard let collection = imageCollection else {
+                print("image collection is empty ...")
+                return
+            }
+            
+            self.imgCollection = collection
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showStory" {
             if let indexPath = mTableView.indexPathForSelectedRow {
                 let storyVC = segue.destination as! StoryViewController
-                storyVC.imageCollection = imgCollection as! [[UIImage]]
+                storyVC.imageCollection = imgCollection
                 storyVC.rowIndex = indexPath.row
                 mTableView.deselectRow(at: indexPath, animated: false)
             }

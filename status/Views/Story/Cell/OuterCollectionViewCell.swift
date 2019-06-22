@@ -17,7 +17,7 @@ class OuterCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         innerCollectionView.register(UINib(nibName: "InnerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "InnerCollectionViewCell")
     }
     
@@ -48,6 +48,8 @@ class OuterCollectionViewCell: UICollectionViewCell {
 
 }
 
+
+// collection view datasource and delegate
 extension OuterCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return story.images.count
